@@ -1,0 +1,13 @@
+# write a program that will select a random name from a list of names. The person selected will have to pay for everybody's food bill.
+
+names = names_string.split(", ")
+# The code above converts the input into an array seperating
+#each name in the input by a comma and space.
+# 🚨 Don't change the code above 👆
+import random
+#print(len(names))
+
+ran_name = random.randint(0 , len(names) - 1)
+#print(ran_name)
+print(f"{names[ran_name]} is going to buy the meal today!")
+#{names[ran_name]}: Esto es una expresión dentro de la cadena de formato. names es una lista de nombres, y ran_name es un índice aleatorio para esa lista. names[ran_name] obtiene el nombre en la posición ran_name de la lista names.
